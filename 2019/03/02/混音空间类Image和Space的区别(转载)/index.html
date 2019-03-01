@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+
+
+
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="XiaoRan&#39;s Audio Blog">
+    <meta name="author" content="XiaoRan Jeason">
+    <meta name="keywords" content="XiaoRan&#39;s Audio Blog">
+    <title>混音空间类Image和Space的区别（转载） ~ XiaoRan&#39;s Audio Blog</title>
+    <link rel="stylesheet" href="/css/Material_Icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+        <link rel="stylesheet" href="/css/post.css">
+        
+            <link rel="stylesheet" href="/css/Prettify/tomorrow-night-eighties.min.css">
+        
+    
+</head>
+
+<body class=" sidebar-collapse">
+<nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="/">
+                XiaoRan&#39;s Audio Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/archives/">
+                                    archives
+                                </a>
+                            </li>
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about/">
+                                    about
+                                </a>
+                            </li>
+                        
+                    
+                    
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://github.com/" target="_blank" data-original-title="See me here">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/" target="_blank" data-original-title="See me here">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+    </div>
+</nav>
+    
+  <div class="page-header header-filter" data-parallax="false" style="background-image: url('/img/post-banner.jpg'); height: 70vh;">
+    
+      <div class="container">
+        <h1 class="title text-center post_title">混音空间类Image和Space的区别（转载）</h1>
+        <p class="text-center"><b>Saturday, March 2nd 2019, 12:32 am</b></p>
+      </div>
+    
+  </div>
+
+  
+  
+  
+    <div class="row" style="margin: 0 0 0; z-index: 999;">
+  <div class="col-md-8 offset-md-1">
+    <div class="main main-raised">
+      <div class="container">
+        <div class="section">
+          <div class="post_content">
+              <blockquote>
+<p>本文系转载，来自于Q友奶子同学</p>
+</blockquote>
+<blockquote>
+<p>关于Image与Space的一点解释</p>
+</blockquote>
+<p>&emsp;  很多人对Image与Space的概念都是混淆的，而且关于Image，我在也已经至少完整说过两次了，然而 = =<br>&emsp; 这里再详细说一下，再分不清或者不懂的话，那就真的没有办法了。</p>
+<p>&emsp; 首先是Image，Image就是我们所说的声场，做音乐的话基本就是指立体声声场了，声场的大小有其物理性的限制（比如两只音箱之间的距离、音箱和地面的距离、音箱离你的距离、天花板的高度等等），这里我们就不讨论了。</p>
+<p>&emsp; 所谓的立体声，用最简单的话来说，就是左右两边的声音不一样的，就是立体声；关于什么是立体声，就不详细讨论了，只提一下。</p>
+<p>&emsp; 在混音的立体声声场中，我们可以：</p>
+<blockquote>
+<p>&emsp; 1.Pan——主要控制左右，</p>
+</blockquote>
+<p>&emsp; Pan到左，声音就移动到了左边，Pan到右，声音就移动到了右边，这应该没有什么疑问的了。</p>
+<p>Pan控制的其实就是左右两个通道之间的电平差，当Pan到了左边，其实就是左边的声音比右边的声音Level高，所以我们的耳朵认为声音是来源于左边的；反之右边同理；中间的时候就是左右两边的Level一样大。</p>
+<blockquote>
+<p>以上所说的是针对Mono轨道的Pan，如果是Stereo轨道的话，情况会更加复杂一些。</p>
+</blockquote>
+<blockquote>
+<p>2.Level——主要控制远近，</p>
+</blockquote>
+<p>&emsp; Level的意思就是电平，通俗点就是所说的音量，但是音量这个词不太专业，所以我一般不会用音量这个词。</p>
+<p>&emsp; 这个也很好理解，不需要说太多了，离你近的声音就比较大声，离你远的声音就比较轻。</p>
+<blockquote>
+<p>3.Frequency——控制——比较复杂——上下、远近都能控制。</p>
+</blockquote>
+<p>&emsp; 说到Frequency的时候，我们一般会认为它是控制声音的上下的，道理很简单，低频会在下面，而高频在上面（一个高频的HH永远不可能处在低频的Bass下面）。</p>
+<p>&emsp; 但是其实Frequency也会控制声音的远近，道理也很简单，我们会觉得低频多的声音离我们比较远，而高频多的声音离我们比较近（近讲效应是例外），想象一下打雷的时候，隆隆的雷声，我们就会觉得它是从很远很远的地方传过来的，因为雷声主要是低频的能量。</p>
+<p>&emsp; Frequency控制远近其实也是一种物理现象，不仅仅是心理声学，我们听在远处的声音的时候，会觉得它不够清晰，原因就是这个声音的高频，在传到你的时候，被空气给消耗掉很多了（高频容易被空气损耗，而低频则相对不会）。</p>
+<p>&emsp; 也就是说，Frequency既能控制远近，也能控制上下，如果用Frequency做X轴，上下高度做Y轴，前后远近距离做Z轴的话，要画Frequency的线的话，那就是一条从左到右、从后到前，从下到上的一条三维的斜线。</p>
+<p>&emsp; OK，好的，说完了Image，我们接着说Space，那么到底什么是Space呢？</p>
+<p>&emsp; 在说Space之前，再最后提一句Image，在说到Image的时候，是没有提到任何有关于混响的东西的。</p>
+<p>&emsp; 说到Space，Space就是空间的意思，说到空间，那么就会想到空间感，接着自然而然就想到混响；其实当说到Space的时候，其实基本就是指的混响（还有延迟类效果）。</p>
+<p>&emsp; 而说到混响的时候，我们更多的是说混响给了声音Depth和Width，也就是说混响给了声音深度和宽度信息。</p>
+<p>&emsp; 也就是说，在说到Image的时候，这个时候的声音，我们认为它们是点声源，而我们通过Pan、Level和Frequency，将它们放置在声场中的不同位置；</p>
+<p>&emsp; 而在说到Space的时候，就是在原有的基础之上，给声音带上宽度和深度信息，也就是说，此时声音不再是点声源了，而是带有空间信息的声音。</p>
+<p>&emsp; 举个简单的例子，当我们给人声加上混响的时候，我们马上就会感到，人声好像变“宽”了，好像“立”起来了，好像更“饱满”了，等等，没错，这正是混响所做的，因为加上了混响，人声此时不再仅仅只是一个“点”了。</p>
+<p>&emsp; 以上就是我要说的，我觉得最好还是把Image（声场/点声源的位置）和Space（空间/点声源带上了空间信息）给分开；你当然也可以说声场就是空间/空间就是声场，一整个声场难道不是一整个空间吗，一整个空间难道不是指全部声场吗，这似乎其实并没有什么不同；其实只要你能自己心里清楚就好了。</p>
+<p>&emsp; （举个栗子，假如我说，“这个混音的声场很奇怪”，其实说的可能是声场中声音元素分布的不平衡；而如果我说到“这个混音的空间感/混响好像有点问题”，这才是说混响/延迟类效果不对，反过来想，如果我要说一个混音的混响有问题，我肯定会直接说混响有问题/或者空间好像不太合适，而不会说声场有问题…对吧?；关于声场和空间的微妙差别，还是需要自己去慢慢体会。）</p>
+<p>—————————本文作者：奶子童鞋———————-本人系转采————————</p>
+
+          </div>
+          <br><br>
+          <div>
+              <p>
+                       
+                      <span class="badge badge-default">#&nbsp;混音</span>
+                      &nbsp;
+                      
+              </p>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <!-- TOC -->
+  
+  <div id="toc">
+    <p class="toc-title"><i class="material-icons" style="vertical-align:middle">toc</i>Toc:</p> 
+    <div id="tocbot"></div>
+  </div>
+
+</div>
+
+
+<br>
+<!-- Comments -->
+<div class="comments" id="comments">
+
+    
+    <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script>               
+        var disqus_shortname = '';
+        var disqus_config = function () {
+            this.page.url = 'http://yoursite.com/2019/03/02/混音空间类Image和Space的区别(转载)/'; 
+            this.page.identifier = '/2019/03/02/混音空间类Image和Space的区别(转载)/';
+        };
+        (function() { 
+            var d = document, s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.src = '//'+disqus_shortname+'.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                                
+</div>
+
+</div>
+  
+
+<footer class="footer footer-default">
+        <div class="container">
+          <div class="float-left" style="padding: 15px 0;">
+              <b>萧然音频工作室 ♥2019♥</b>
+          </div>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>&nbsp;<a href="https://hexo.io/zh-cn/" target="_blank">HEXO</a>&nbsp;<i class="material-icons">favorite_border</i>
+            <a href="https://github.com/invom/Material-T" target="_blank">Material-T</a>
+          </div>
+        </div>
+</footer>
+      <!--   Core JS Files   -->
+      <script src="/js/core/jquery.min.js?v=3.2.1"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/core/popper.min.js"></script>
+      <script src="/js/core/bootstrap-material-design.min.js"></script>
+      <script src="/js/plugins/moment.min.js"></script>
+      <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+      <script src="/js/material-kit.min.js?v=2.0.5"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+        <script src="/js/post.js"></script>
+        <script src="/js/plugins/prettify.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('pre').addClass('prettyprint linenums');
+                prettyPrint();
+            })
+        </script>
+      
+</body>
+</html>
